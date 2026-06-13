@@ -91,4 +91,13 @@ Health Monitoring app/
     └── css/style.css       # Styles
 ```
 
-*Final year project. ML-based health status prediction using patient vitals.*
+## Team
+
+Final year group project.
+
+| Name | GitHub |
+|---|---|
+| Hari (primary developer) | [@hari72328](https://github.com/hari72328) |
+| Saumya Srinivasan | [@SaumyaSrinivasan](https://github.com/SaumyaSrinivasan) |
+
+*ML-based health status prediction using patient vitals.*

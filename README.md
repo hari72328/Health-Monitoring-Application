@@ -2,19 +2,15 @@
 
 > A machine learning web app that predicts a patient's health status based on key vitals and lifestyle inputs.
 
-Built as a final year group project using Flask + scikit-learn with a Decision Tree classifier trained on real health data.
-
----
+Built as a final year group project using Flask and scikit-learn with a Decision Tree classifier trained on real health data.
 
 ## What it does
 
-Enter a patient's vitals and lifestyle details — the app runs them through a trained ML model and instantly predicts:
+Enter a patient's vitals and lifestyle details. The app runs them through a trained ML model and instantly predicts:
 
 - ✅ **Perfectly okay**
 - ⚠️ **May be a chance of ill**
-- 🚨 **Ill — must consult a doctor**
-
----
+- 🚨 **Ill, must consult a doctor**
 
 ## Input Parameters
 
@@ -29,8 +25,6 @@ Enter a patient's vitals and lifestyle details — the app runs them through a t
 | Alcohol | Drinker or not |
 | Smoker | Smoker or not |
 | Sleep Hours | Average hours of sleep |
-
----
 
 ## How it works
 
@@ -50,8 +44,6 @@ User enters vitals (Flask form)
   (Okay / Possible illness / See a doctor)
 ```
 
----
-
 ## Tech Stack
 
 | Layer | Tech |
@@ -63,8 +55,6 @@ User enters vitals (Flask form)
 | Frontend | HTML, Bootstrap 4, CSS |
 | Notebook | Jupyter (preprocessing + model training) |
 
----
-
 ## Setup
 
 ### 1. Install dependencies
@@ -75,7 +65,7 @@ pip install flask scikit-learn pandas numpy joblib
 
 ### 2. Train the model (if `model.save` is missing)
 
-Open and run `preprocessing.ipynb` — it cleans the dataset, trains the Decision Tree, and saves `model.save` via joblib.
+Open and run `preprocessing.ipynb`. It cleans the dataset, trains the Decision Tree, and saves `model.save` via joblib.
 
 ### 3. Run the app
 
@@ -86,13 +76,11 @@ python app.py
 
 Then open `http://127.0.0.1:5000` in your browser.
 
----
-
 ## Project Structure
 
 ```
 Health Monitoring app/
-├── app.py                  # Flask app — routes and prediction logic
+├── app.py                  # Flask app, routes and prediction logic
 ├── preprocessing.ipynb     # Data cleaning, model training, model export
 ├── DATASET.csv             # Health dataset used for training
 ├── model.save              # Trained Decision Tree model (joblib)
@@ -103,6 +91,4 @@ Health Monitoring app/
     └── css/style.css       # Styles
 ```
 
----
-
-*Final year project — ML-based health status prediction using patient vitals.*
+*Final year project. ML-based health status prediction using patient vitals.*
